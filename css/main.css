@@ -444,11 +444,6 @@
 .name {
   width: 200px;
   height: 20px;
-  text-align: center;
-  color: #000000;
-  background-color: #c0bfbf;
-  border: none;
-  border-radius: 5px;
 }
 
 .name::placeholder, .phone::placeholder, .mail::placeholder {
@@ -459,19 +454,11 @@
 .phone {
   width: 150px;
   height: 20px;
-  text-align: center;
-  background-color: #c0bfbf;
-  border: none;
-  border-radius: 5px;
 }
 
 .mail {
   width: 250px;
   height: 20px;
-  text-align: center;
-  background-color: #c0bfbf;
-  border: none;
-  border-radius: 5px;
 }
 
 .formulario-suscripcion button[type=submit] {
@@ -880,12 +867,8 @@
 }
 
 .carrito__campos {
-  background-color: #c0bfbf;
-  border: none;
-  border-radius: 5px;
   width: 150px;
   height: 20px;
-  text-align: center;
 }
 
 .carrito__campos::placeholder {
@@ -1189,6 +1172,38 @@
   font-size: 15px;
   font-weight: bold;
   border-radius: 50%;
+}
+
+.name {
+  text-align: center;
+  color: #000000;
+  background-color: #c0bfbf;
+  border: none;
+  border-radius: 5px;
+}
+
+.phone {
+  text-align: center;
+  color: #000000;
+  background-color: #c0bfbf;
+  border: none;
+  border-radius: 5px;
+}
+
+.mail {
+  text-align: center;
+  color: #000000;
+  background-color: #c0bfbf;
+  border: none;
+  border-radius: 5px;
+}
+
+.carrito__campos {
+  text-align: center;
+  color: #000000;
+  background-color: #c0bfbf;
+  border: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

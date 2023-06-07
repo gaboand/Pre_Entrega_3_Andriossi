@@ -184,3 +184,29 @@ $redes-sociales: (
       border-radius: 50%;
     }
   }
+
+//   Mixin para campos de footer suscripción y carrito//
+
+@mixin field-format {
+    text-align: center;
+	color: $color-font-dark;
+	background-color: #c0bfbf;
+	border: none;
+	border-radius: 5px;
+}
+
+.name {
+    @include field-format;
+}
+
+.phone {
+    @include field-format;
+}
+
+.mail {
+    @include field-format;
+}
+
+.carrito__campos{
+    @include field-format;
+}
