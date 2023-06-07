@@ -1122,11 +1122,73 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding: 50px 50px 150px;
+  padding: 50px 50px 20px;
 }
 .sitemapp__secciones a {
   color: #000000;
   font-size: 18px;
+}
+.sitemapp__secciones h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.sitemap__redes {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.icon__facebook {
+  background-color: #0000ff;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.icon__instagram {
+  background-color: #ff0000;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.icon__tiktok {
+  background-color: #747474;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.icon__snapchat {
+  background-color: #eeff00;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
