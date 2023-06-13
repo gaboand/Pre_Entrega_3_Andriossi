@@ -127,13 +127,18 @@
 	display: none;
 }
 
-.aside-index {
+.aside-index{
 	grid-area: aside;
-	width: 100%;
-	background-color: $color-primary;
-	color: $color-secondary;
+	background-color: $color-primary;	
+}
+
+.aside-index-mob{
+	display: flex;
+	justify-content: center;
+}
+
+.aside-index-desk {
 	display: none;
-	padding: 15px;
 }
 
 .ropa{
@@ -252,9 +257,29 @@
 		}
 	}
 
-	.aside-index {
+	.aside-index{
+		grid-area: aside;
+		background-color: $color-primary;
+	}
+	
+	.aside-index-desk{
 		display: flex;
-		flex-direction: column	;
+		flex-direction: column;
+		background-color: $color-primary;
+		height: 100%;
+		padding: 25px;
+	}
+
+	.aside-index-mob {
+		width: 100%;
+		background-color: $color-primary;
+		color: $color-secondary;
+		display: none;
+	
+	}
+	.aside-index-mob{
+		display: none;
+		
 	}
 
 	.titulo__aside{
@@ -467,7 +492,7 @@
 .carrito__beneficios-index{
 	display: flex;
 	justify-content: center;
-	gap: 5px;
+	gap: 30px;
 	padding: 20px 0;
 }
 
@@ -476,7 +501,7 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	width: 300px;
+	width: 250px;
 	color: $color-font-dark;
 	gap: 5px; 
 	font-size: 14px;
@@ -547,36 +572,36 @@
 }
 
 .datos-contacto p {
-	font-size: 14px;
+	font-size: 15px;
 	text-align: center;
 	color: $color-font-dark;
 }
 
 .footer__link {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	padding: 15px 5px;
 }
 
 .footer__link a{
-		font-size: 12px;
-		padding: 5px 5px;
-		color: $color-font-dark;
-		text-decoration: none;
+	font-size: 13px;
+	padding: 5px 5px;
+	color: $color-font-dark;
+	text-decoration: none;
 }
 
 .footer__redes{
 	display: flex;
 	justify-content: space-evenly;
-	padding: 15px;
+	padding: 12px;
 }
 
 .copyright {
 	text-align: center;
 	color: $color-font-dark;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .whatsapp-icon {
@@ -600,14 +625,17 @@
 		justify-content: center;
 	}
 
+	@media (min-width: $media-lg) {
 	.footer-index {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		// align-content: center;
-		padding: 50px;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:  
+			"contacto contacto contacto"
+			"link link link"
+			"copyright copyright copyright";
+		}
 	}
-	
+
 	.formulario-suscripcion h2 {
 		padding: 30px 10px;
 		font-size: 20px;
@@ -641,27 +669,31 @@
 		margin: 4px;
 		font-weight: 900;
 	}
-	
-	.datos-contacto p {
-		padding: 5px;
-		font-size: 14px;
+
+	.datos-contacto {
+		grid-area: contacto;
 	}
 
-	.footer__link a{
+	.datos-contacto p{
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.footer__link{
+		grid-area: link;
+		padding: 10px;
+	}
+
+	.copyright{
+		grid-area: copyright;
+		padding: 10px 0 5px;
 		font-size: 12px;
-		padding: 5px 10px;
 	}
 
 	.footer__redes{
 		display: flex;
 		justify-content: space-evenly;
-		padding: 5px;
-		gap: 15px;
-	}
-
-	.copyright {
-		font-size: 12px;
-		padding: 5px 10px;
+		padding: 15px 150px;
 	}
 
 	.whatsapp-icon {
