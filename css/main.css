@@ -931,7 +931,7 @@
 }
 
 .carrito__campos::placeholder {
-  color: #000000;
+  color: #ffffff;
   font-size: 13px;
 }
 
@@ -1174,17 +1174,17 @@
   font-size: 25px;
 }
 
-.sitemapp__secciones {
+.sitemap__secciones {
   display: flex;
   flex-direction: column;
   gap: 35px;
   padding: 50px 50px 20px;
 }
-.sitemapp__secciones a {
+.sitemap__secciones a {
   color: #000000;
   font-size: 18px;
 }
-.sitemapp__secciones h3 {
+.sitemap__secciones h3 {
   font-size: 25px;
   text-align: center;
 }
@@ -1249,32 +1249,32 @@
 
 .name {
   text-align: center;
-  color: #000000;
-  background-color: #c0bfbf;
+  background-color: #a09e9e;
+  color: #070707;
   border: none;
   border-radius: 5px;
 }
 
 .phone {
   text-align: center;
-  color: #000000;
-  background-color: #c0bfbf;
+  background-color: #a09e9e;
+  color: #070707;
   border: none;
   border-radius: 5px;
 }
 
 .mail {
   text-align: center;
-  color: #000000;
-  background-color: #c0bfbf;
+  background-color: #a09e9e;
+  color: #070707;
   border: none;
   border-radius: 5px;
 }
 
 .carrito__campos {
   text-align: center;
-  color: #000000;
-  background-color: #c0bfbf;
+  background-color: #454545;
+  color: #fafafa;
   border: none;
   border-radius: 5px;
 }

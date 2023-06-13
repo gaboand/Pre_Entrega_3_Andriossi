@@ -35,7 +35,6 @@
 .articulo__detalle{    
     h3{
         font-size: 16px;
-    
     }
 }
 
@@ -140,7 +139,7 @@
     }
 }
 
-.sitemapp__secciones{
+.sitemap__secciones{
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -187,26 +186,26 @@ $redes-sociales: (
 
 //   Mixin para campos de footer suscripción y carrito//
 
-@mixin field-format {
+@mixin field-format ($param1, $param2) {
     text-align: center;
-	color: $color-font-dark;
-	background-color: #c0bfbf;
+	background-color: $param1;
+    color: $param2;
 	border: none;
 	border-radius: 5px;
 }
 
 .name {
-    @include field-format;
+    @include field-format(#a09e9e,#070707);
 }
 
 .phone {
-    @include field-format;
+    @include field-format (#a09e9e,#070707);
 }
 
 .mail {
-    @include field-format;
+    @include field-format(#a09e9e,#070707);
 }
 
 .carrito__campos{
-    @include field-format;
+    @include field-format (#454545,#fafafa);
 }
